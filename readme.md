@@ -1,6 +1,6 @@
 Navigate to the css folder
 ```
-cd assets/css
+cd assets/css/
 ```
 
 Then run:
