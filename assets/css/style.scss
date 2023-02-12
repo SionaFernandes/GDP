@@ -13,12 +13,11 @@ a{
 .swiper-rtl .swiper-button-next,
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-    color: #000;
-    border: 3px solid #000;
+    color: #e9ecef;
+    border: 2px solid rgb(255 255 255 / 8%);
     border-radius: 50%;
     width: 48px;
     height: 48px;
-    background-color: #f8f9fa;
     font-weight: 800;
 }
 
@@ -172,9 +171,7 @@ p {
 }
 
 h2 {
-    border-bottom: 2px solid #fff;
     text-align: center;
-    padding-bottom: 12px;
 }
 
 .swiper-slide {
