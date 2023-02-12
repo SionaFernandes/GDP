@@ -2,6 +2,13 @@
     --swiper-navigation-size: 12px;
 }
 
+a{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next,
 .swiper-button-next,
@@ -32,10 +39,11 @@ h5 {
     font-weight: 400;
 }
 
-h1{
+h1 {
     font-size: 4rem;
+
     @media screen and (max-width:768px) {
-        font-size: 2.5rem;
+        font-size: 28px;
     }
 }
 
@@ -64,7 +72,7 @@ h2 {
     width: 100%;
 }
 
-.ts-background-image{
+.ts-background-image {
     opacity: 60%;
 }
 
@@ -91,14 +99,16 @@ h2 {
 
 
 
-p{
+p {
     line-height: 22px;
     font-size: 14px;
+    color: #878787;
 }
 
 .title-p {
     color: #fff;
     font-size: 30px;
+
     @media screen and (max-width:768px) {
         font-size: 18px;
     }
@@ -109,53 +119,95 @@ p{
 
     @media screen and (max-width:768px) {
         height: 70vh;
-        box-shadow: inset 0px 0px 200px 40px #000;
     }
 }
 
 .swiper {
-    
 
     a.youtube-link {
-        display: block;
-        height: 600px;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: bottom;
+        border-radius: 5px;
+        height: 196px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: inset 0px 0px 30px 7px #000;
     }
 }
 
-.logo-container{
+.logo-text{
+    color: #fff;
+}
+.logo-container {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 15px;
+    background-color: #000;
 }
 
-.swiperParagraph{
+.swiperParagraph {
     height: 50px;
-    .swiper-slide{
+
+    .swiper-slide {
         opacity: 0 !important;
     }
-    .swiper-slide-active{
+
+    .swiper-slide-active {
         opacity: 1 !important;
     }
 }
 
-.main-title{
+.main-title {
     margin-top: 200px;
-    @media screen  and (max-width:375px){
+
+    @media screen and (max-width:375px) {
         margin-top: 160px;
         font-size: 32px;
     }
- 
+
 }
 
-h2{
+h2 {
     border-bottom: 2px solid #fff;
     text-align: center;
     padding-bottom: 12px;
 }
 
-.swiper-slide{
+.swiper-slide {
     background-position: center;
+}
+
+
+
+//Card
+
+
+.pulse-animation {
+    animation: bubble 1s infinite alternate;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        font-size: 24px;
+        color: #FF0000;
+        cursor: pointer;
+    }
+}
+
+@keyframes bubble {
+    to {
+        box-shadow: 0 0 0 4px rgb(251 251 251 / 56%);
+    }
 }
